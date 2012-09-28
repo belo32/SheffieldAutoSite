@@ -3879,9 +3879,13 @@ input[type="submit"].btn.btn-mini {
   display: block;
   width: 18px;
   height: 2px;
+<<<<<<< HEAD
 
   background-color: #f5f5f5;
 
+=======
+  background-color: #f5f5f5;
+>>>>>>> 483d4f26af0c779eff5435d3180dfb37a00db253
   -webkit-border-radius: 1px;
      -moz-border-radius: 1px;
           border-radius: 1px;
