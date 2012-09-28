@@ -14,7 +14,22 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <style>
       body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+
+      #header-area{
+      	padding-top: 75px;
+      }
+      .hero-unit{
+      	opacity: 0.5;
+      }
+      .my-header {
+      	background: #000000;
+      	max-width: 100%;
+      	background-image:url('assets/img/header.jpg');
+      	background-repeat: no-repeat;
+      	background-size: 50% 100%;
+      	background-position: center;
       }
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
@@ -45,29 +60,34 @@
           <a class="brand" href="#">Sheffield Auto</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              
               <li><a href="#services">Services</a></li>
-              <li><a href="#about">About</a></li>
+              
               <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
+        	<a class="brand" href="#">Call now! (613) 746-3896</a>
         </div>
       </div>
     </div>
 	<!-- Content area -->
-    <div class="container-fluid">
+	<div class="my-header">
+    <div class="container-fluid" id="header-area">
 		
 		<div class="row-fluid">
 			
 				<div class="span9">
-				<div class="hero-unit">
-     	 			<h1>Sheffield Auto Services</h1>
-     	 			<p>Sheffield Auto Services is a family owned business that has been providing automotive services to Ottawa since *ENTER DATE HERE*</br>
+				<div class="hero-unit" id="about">
+     	 			<h2>Sheffield Auto Services</h2>
+     	 			<p>Sheffield Auto Services is a family owned business that has been providing automotive services to Ottawa since 1996</br>
      	 			Our priority is to provide our customers with quality services and honest prices</p>
 				</div><!-- hero-unit-->	
+				
 				</div><!--span9-->
 				<div class="span3">
-					<H2>Business Hours</h2>
+					
+					<H3>Business Hours</h3>
 					<table class="table table-striped">
 						<thead>
 							<tr>
@@ -106,12 +126,44 @@
 							</tr>
 						</body>
 					</table>
-				</div>
+				
+				</div>		
 		</div><!-- row-fluid-->
-		
-		<div class="page-header" id="services">
+		</div>
+</div>
+		<div class="container-fluid">
+	<div class="page-header" id="services">
   		<h1>Services</h1>
 	</div>
+	<div class="row-fluid">
+		<div class="span3">
+		
+				<H4>General Repair</h4>
+				<p>We repair automotive from all makes and models</p>
+				<H4>Towing Services</h4>
+				<p></p>					
+		</div>
+		<div class="span3">
+			<H4>Emission Testing</h4>
+			<p>With our facility we provide Ontario government regulated emission tests</p>
+			<H4>Safety Inspection</h4>
+				<p>We provide safety inspection from our experience licensed technicians</p>			
+		</div>
+				
+		<div class="span3">
+				<dd>
+				<dt>Rebuild alternators and starters</dt>
+				<dt>Brakes repair and bleeding</dt>
+				<dt>Air Conditioning</dt> 
+				<dt>Tire repair and maintenance</dt>
+				<dt>Oil Change</dt>
+				</dd>
+							
+		</div>		
+		
+	</div>
+	
+		
 	
 	
 	<div class="page-header" id="contact">
