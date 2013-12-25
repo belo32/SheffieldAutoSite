@@ -1,31 +1,351 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
-  </head>
-  <body>
-   	<!-- Top Nav Bar -->
-	<nav class="navbar navbar-fixed-top" role="navigation">
-	  
-	  <!-- Collect the nav links, forms, and other content for toggling -->
-	  	<a class="navbar-brand" href="#">Sheffield Auto Services</a>
-	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#">Services</a></li>
-	      <li><a href="#">Contact</a></li>
-	    </ul>
-	
+<head>
+	<title>Sheffield Auto Services</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<style>
+	.navbar-nav.navbar-right:last-child{
+		margin-right:0px;
+	}
+	.sa-navbar{
+		background-color:#01202C;
+
+
+		border-width:0px;
+		border-radius:0;
+	}
+	.navbar-text{
+		padding-right:10px;
+	}
+	.navbar{
+		margin-bottom:0px;
+	}
+	.contact{
+		background-color:#272727;
+		color:#888;
+	}
+	.header-img{
+		background-image:url('assets/img/garage-gm.png');
+
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center center;
+		margin-left:0px;
+		margin-right:0px;
+		height:350px;
+		border-top-style:solid;
+		border-width:3px;
+		border-color:#dddddd;
+	}
+
+	.operation{
+		background-color:#FFF;
+	}
+	.remove-lpad{
+		padding-left:0px;
+	}
+	.remove-rpad{
+		padding-right:0px;
+	}
+	.remove-padding{
+		padding:0px;
+	}
+	.remove-margin{
+		margin:0px;
+	}
+	.sa-hr{
+		margin-bottom:1px;
+		margin-top:1px;
+	}
+	.sub-header{
+		width: 100%;
+		/*	background-color:#e8373e;*/
+		background-image:url('assets/img/sub-header.png');
+		background-repeat:repeat-x;
+	}
+	#sub-header.affix {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color:#e8373e;
+
+		z-index:2;
+	}
+
+	.sa-footer{
+		background-color:#222222;
+
+		width:100%;
+
+	}
+	.copyright{
+		color:#888;
+		margin-top:100px;
+	}
+
+	.add-opacity{
+		opacity:0.9;
+	}
+	.section{
+		background: url(assets/img/bg-bot-tail.gif) center top repeat-x #fff;
+	}
+	.red li.active a,
+	.red li.active a:hover {
+		background-color: #A9DD35;
+	}
+	.red li a{
+		color:#A9DD35;
+		/*color:#229189;*/
+	}
+	.white{
+		color:white;
+	}
+
+	.copyright{
+		margin-top:35px;
+	}
+	</style>
+
+</head>
+<body data-spy="scroll" data-target=".sub-header" data-offset="85">
+
+	<!-- Top Nav Bar -->
+
+	<nav id="home" class="navbar navbar-default sa-navbar" role="navigation">
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<a class="navbar-brand" href="#"><strong class="white">Sheffield Auto Services</strong></a>
+
+		<ul class="nav navbar-nav navbar-right ">
+			<li><a href="https://goo.gl/maps/Vs8L4"><div class="white"><span class="glyphicon glyphicon-road"></span> Get Directions</div></a></li>
+			<li>
+				<p class="navbar-text"><span class="white">Call Now! 1 (613) 746-3896</span></p>	
+			</li>
+		</ul>
 	</nav>
-	
+	<!-- secondary nav bar -->
+	<div id="sub-header" class="container sub-header">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<ul class="nav nav-pills nav-justified red">
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#services">Services</a>
+					</li>
+					<li>
+						<a href="#maintenance">Maintenance</a>
+					</li>
+					<li><a href="#contact">Contact</a></li>
+					<!--<li><a href="#sales">Sales</a></li>-->
+				</ul>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/js/jquery-1.7.2.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
+			</div>
 
-    
-  </body>
+		</div>
+	</div>
+
+
+
+
+	<div class="row header-img" remove>
+		<div class="col-md-8 remove-lpad">
+			<div class="jumbotron add-opacity">
+
+				<p>Sheffield Auto Services is a family owned business that has been providing automotive services to Ottawa since 1996 whose priority is to provide our customers with quality services and honest prices</p>
+
+			</div>
+		</div>
+		<!-- hours of operation -->
+		<div class="col-md-3 col-md-offset-1 remove-rpad add-opacity">
+			<table class="table table-bordered operation">
+				<tr><th>Hours of Operation</th></tr>
+				<tr><td>7am - 4pm Monday - Friday</td></tr>
+				<tr><td>7am - 12pm Saturday</td></tr>
+			</table>
+		</div>
+
+	</div>
+
+
+
+
+	<h1 id="services">Services</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img alt="General Repair" src="assets/img/general-repair.jpg">
+					<div class="caption">
+						<h3>General Repair</h3>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/tow-service.jpg" alt="Towing Services">
+					<div class="caption">
+						<h3>Towing Services</h3>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/emission-test.jpg" alt="Emission Test">
+					<div class="caption">
+						<h3>Emission Test</h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/inspection.jpg" alt="Safety Inspection">
+					<div class="caption">
+						<h3>Safety Inspection</h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/tire-service.jpg" alt="Tire Repair and Maintenance">
+					<div class="caption">
+						<h3>Tire Repair and Maintenance</h3>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img src="assets/img/brake.jpg" alt="Brakes Repair and Bleeding">
+					<div class="caption">
+						<h3>Brakes Repair and Bleeding</h3>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Maintenance -->
+<hr>
+<h1 id="maintenance"> Maintenance</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="assets/img/oil-service.jpg" alt="Oil Change">
+				<div class="caption">
+					<h3>Oil Change</h3>
+
+
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="assets/img/tire-maintenance.jpg" alt="Tire Maintenance">
+				<div class="caption">
+					<h3>Tire Maintenance</h3>
+
+
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="assets/img/brake.jpg" alt="Brake Services">
+				<div class="caption">
+					<h3>Brake Services</h3>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Contact Section -->
+<hr>
+<h1 id="contact">Contact</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 col-md-offset-1">
+			<address>
+				<strong>Sheffield Auto Services</strong><br>
+				1325 Leeds Ave., Unit 5<br>
+				Ottawa, ON K1B 5K9<br>
+				<abbr title="Phone">P:</abbr> (613) 746-3896
+			</address>
+		</div>
+
+		<div class="col-md-4">
+			<!-- Foxyform sheffieldauto1@hotmail.com-->
+			<!-- Do not change the code! -->
+			<a id="foxyform_embed_link_504896" href="http://www.foxyform.com/">foxyform</a>
+			<script type="text/javascript">
+			(function(d, t){
+				var g = d.createElement(t),
+				s = d.getElementsByTagName(t)[0];
+				g.src = "http://www.foxyform.com/js.php?id=504896&sec_hash=fe2e62148a3&width=350px";
+				s.parentNode.insertBefore(g, s);
+				}(document, "script"));
+			</script>
+				<!-- Do not change the code! -->
+
+		</div>
+			<div class="col-md-4">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x4cce0f02ea7d981d%3A0x532f992042f52773!2sSheffield+Auto+Services%2C+Leeds+Avenue%2C+Ottawa%2C+ON!5e0!3m2!1sen!2sca!4v1387215806203" width="400" height="300" frameborder="0" style="border:0"></iframe>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+
+	<div class="container sa-footer">
+		<div class="row">
+			<div class="col-md-3 col-md-offset-9">
+				<p class="copyright white">&copy; Sheffield Auto Services 2013</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<p class="white">Developed by <a href="http://hajjar.ca/">Bilal Al-Hajjar</a>. Powered by <a href="http://pages.github.com/">Github Pages</a>. </p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+
+	<script>
+
+	$('#sub-header').affix({
+		offset: $('#sub-header').position()
+	});
+	var offset = 80;
+
+
+	</script>
+
+</body>
 </html>
