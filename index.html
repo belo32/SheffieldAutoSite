@@ -67,11 +67,11 @@
 		background-repeat:repeat-x;
 		box-shadow: 0px 4px 20px #888888;
 	}
-	#sub-header.affix {
+	#header.affix {
 		position: fixed;
 		top: 0;
 		width: 100%;
-		background-color:#e74c3c;
+		
 	
 		z-index:2;
 	}
@@ -118,13 +118,19 @@
 	.add-pad-repair{
 		padding-top: 80px;
 	}
+	.add-nav-pad{
+		padding-top: 40px;
+	}
+	.add-nav-pad-c{
+		padding-top: 50px;
+	}
 	</style>
 
 </head>
 <body>
 
-	<nav id="#header" class="navbar navbar-default" role="navigation">
-		<div  class="container-fluid">
+	<nav  id="header" class="navbar navbar-default" role="navigation">
+		<div   class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -187,7 +193,7 @@
 
 
 <div class="container marketing">
-	<div id="repair" class="row featurette add-pad-repair">
+	<div id="repair" class="row featurette add-nav-pad">
 		<div class="col-md-7">
 			<h2 class="featurette-heading">Auto Repair Services</h2>
 			<p class="lead">We offer a wide range of auto maintenance and repair services:</p>
@@ -220,7 +226,7 @@
 	</div>
 
 	<hr class="featurette-divider">
-	<div id="towing" class="row featurette">
+	<div id="towing" class="row featurette add-nav-pad">
 		<div class="col-md-5">
 			<img class="featurette-image img-responsive"  alt="Towing" src="assets/img/tow-service.jpg">
 		</div>
@@ -231,7 +237,7 @@
 	</div>
 
 	<hr class="featurette-divider">
-	<div id="emission" class="row featurette">
+	<div id="emission" class="row featurette add-nav-pad">
 		<div class="col-md-7">
 			<h2 class="featurette-heading">Emission Test & Repair Facility</h2>
 			<p class="lead">We are an accredited Drive Clean test and repair facility for light-duty vehicles. </p>
@@ -246,8 +252,8 @@
 
 
 <!-- Contact Section -->
-<hr>
-<h1 id="contact">Contact</h1>
+<hr class="featurette-divider">
+<h1 id="contact" class="add-nav-pad-c">Contact</h1>
 <div class="container">
 	<div class="row">
 		<div class="col-md-2 col-md-offset-1">
