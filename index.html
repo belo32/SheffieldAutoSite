@@ -35,9 +35,9 @@
 		margin-left:0px;
 		margin-right:0px;
 		height:600px;
-		border-top-style:solid;
+		/*border-top-style:solid;
 		border-width:3px;
-		border-color:#dddddd;
+		border-color:#dddddd;*/
 		box-shadow:0px 0px 20px 2px #000000 inset;	
 	}
 
@@ -111,55 +111,61 @@
 	h3{
 		
 	}
+
+	.add-top-pad{
+		padding-top: 10px;
+	}
+	.add-pad-repair{
+		padding-top: 80px;
+	}
 	</style>
 
 </head>
-<body data-spy="scroll" data-target=".sub-header" data-offset="85">
+<body>
 
-	<!-- Top Nav Bar -->
-
-	<nav id="home" class="navbar navbar-default sa-navbar" role="navigation">
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<a class="navbar-brand" href="#"><strong class="white">Sheffield Auto Services</strong></a>
-
-		<ul class="nav navbar-nav navbar-right ">
-			<li><a href="https://goo.gl/maps/Vs8L4"><div class="white"><span class="glyphicon glyphicon-road"></span> Get Directions</div></a></li>
-			<li>
-				<p class="navbar-text"><span class="white">Call Now! 1 (613) 746-3896</span></p>	
-			</li>
-		</ul>
-	</nav>
-	<!-- secondary nav bar -->
-	<div id="sub-header" class="container sub-header">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
-				<ul class="nav nav-pills nav-justified red">
-					<li>
-						<a href="#home">Home</a>
-					</li>
-					<li>
-						<a href="#services">Services</a>
-					</li>
-					<!--<li>
-						<a href="#maintenance">Maintenance</a>
-					</li>-->
-					<li><a href="#contact">Contact</a></li>
-					<!--<li><a href="#sales">Sales</a></li>-->
-				</ul>
-
+	<nav id="#header" class="navbar navbar-default" role="navigation">
+		<div  class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					
+				</button>
+				<a class="navbar-brand" href="#">Sheffield Auto Service</a>
 			</div>
 
-		</div>
-	</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#repair">Auto Repiar</a></li>
+					<li><a href="#towing">Towing</a></li>
+					<li><a href="#emission">Emission Test</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Get Directions!</a></li>
+					<li><a href="#">Call now! 613 746-3896</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	
 
 
 
 
-	<div class="row header-img" remove>
+<div id="home" class="row header-img" remove>
+	<div class="container add-top-pad">
 		<div class="col-md-8 remove-lpad">
 			<div class="jumbotron add-opacity">
 
-				<p>Sheffield Auto Services is a family owned business that has been providing automotive services to Ottawa since 1996 whose priority is to provide our customers with quality services and honest prices</p>
+				<p>Sheffield Auto Services is a family owned business that has been providing automotive services to Ottawa since 1996 whose priority is to provide our customers with quality services and honest prices.</p>
 
 			</div>
 		</div>
@@ -167,128 +173,77 @@
 		<div class="col-md-3 col-md-offset-1 remove-rpad add-opacity">
 			<table class="table table-bordered operation">
 				<tr><th>Hours of Operation</th></tr>
-				<tr><td>8:30am - 5:00pm Monday - Friday</td></tr>
-				<tr><td>8:30am - 1:00pm Saturday</td></tr>
+				<tr><td>8:00am - 5:00pm Monday - Friday</td></tr>
+				<tr><td>8:00am - 12:00pm Saturday</td></tr>
 			</table>
 		</div>
-
 	</div>
 
+</div>
 
 
 
-	<h1 id="services">Services</h1>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img alt="General Repair" src="assets/img/general-repair.jpg">
-					<div class="caption">
-						<h3>General Repair</h3>
 
 
-					</div>
+
+<div class="container marketing">
+	<div id="repair" class="row featurette add-pad-repair">
+		<div class="col-md-7">
+			<h2 class="featurette-heading">Auto Repair Services</h2>
+			<p class="lead">We offer a wide range of auto maintenance and repair services:</p>
+			<div class="row">
+				<div class="col-md-6">
+					<ul>
+						<li>Battery, Alternator & starters</li>
+						<li>Brakes</li>
+						<li>Exhaust System</li>
+						<li>Oil Changes</li>
+						<li>Rust Proofing</li>
+					</ul>
+
+				</div>
+				<div class="col-m-6">
+					<ul>
+						<li>Safety Insepction</li>
+						<li>Shocks & Struts</li>
+						<li>Steering & Suspension</li>
+						<li>Tires</li>
+						<li>Transmission & Clutch</li>
+						<li>Tune-ups</li>
+					</ul>
 				</div>
 			</div>
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="assets/img/tow-service.jpg" alt="Towing Services">
-					<div class="caption">
-						<h3>Towing Services</h3>
+		</div>
+		<div class="col-md-5">
+			<img class="featurette-image img-responsive"  alt="Auto Repair Services" src="assets/img/general-repair.jpg">
+		</div>
+	</div>
 
+	<hr class="featurette-divider">
+	<div id="towing" class="row featurette">
+		<div class="col-md-5">
+			<img class="featurette-image img-responsive"  alt="Towing" src="assets/img/tow-service.jpg">
+		</div>
+		<div class="col-md-7">
+			<h2 class="featurette-heading">Towing Services <span class="text-muted">Call now! 613 746-3896</span></h2>
+			<p class="lead">We provide local auto towing services in the Ottawa region and we'll buy your old car for recycling.</p>
+		</div>
+	</div>
 
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="assets/img/emission-test.jpg" alt="Emission Test">
-					<div class="caption">
-						<h3>Emission Test</h3>
-
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="assets/img/inspection.jpg" alt="Safety Inspection">
-					<div class="caption">
-						<h3>Safety Inspection</h3>
-
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="assets/img/tire-service.jpg" alt="Tire Repair and Maintenance">
-					<div class="caption">
-						<h3>Tire Repair and Maintenance</h3>
-
-
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="assets/img/brake.jpg" alt="Brakes Repair and Bleeding">
-					<div class="caption">
-						<h3>Brakes Repair and Bleeding</h3>
-
-					</div>
-				</div>
-			</div>
-            <div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="assets/img/oil-service.jpg" alt="Oil Change">
-					<div class="caption">
-						<h3>Oil Change</h3>
-
-
-					</div>
-				</div>
-			</div>
-
+	<hr class="featurette-divider">
+	<div id="emission" class="row featurette">
+		<div class="col-md-7">
+			<h2 class="featurette-heading">Emission Test & Repair Facility</h2>
+			<p class="lead">We are an accredited Drive Clean test and repair facility for light-duty vehicles. </p>
+		</div>
+		<div class="col-md-5">
+			<img class="featurette-image img-responsive"  alt="Auto Repair Services" src="assets/img/drive-clean.jpg">
 		</div>
 	</div>
 </div>
-<!-- Maintenance --><!--
-<hr>
-<h1 id="maintenance"> Maintenance</h1>
-<div class="container">
-	<div class="row">
-		<div class="col-sm-6 col-md-4">
-			<div class="thumbnail">
-				<img src="assets/img/oil-service.jpg" alt="Oil Change">
-				<div class="caption">
-					<h3>Oil Change</h3>
 
 
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-4">
-			<div class="thumbnail">
-				<img src="assets/img/tire-maintenance.jpg" alt="Tire Maintenance">
-				<div class="caption">
-					<h3>Tire Maintenance</h3>
 
-
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-4">
-			<div class="thumbnail">
-				<img src="assets/img/brake.jpg" alt="Brake Services">
-				<div class="caption">
-					<h3>Brake Services</h3>
-
-
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
--->
 
 <!-- Contact Section -->
 <hr>
@@ -354,8 +309,8 @@
 
 	<script>
 
-	$('#sub-header').affix({
-		offset: $('#sub-header').position()
+	$('#header').affix({
+		offset: $('#header').position()
 	});
 	var offset = 80;
 
